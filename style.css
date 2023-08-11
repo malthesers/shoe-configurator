@@ -1,0 +1,68 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+  background-image: url(svg/synthwave-background.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.fade {
+  filter: brightness(30%);
+}
+
+section {
+  position: absolute;
+  min-width: 20rem;
+  max-width: 30rem;
+  width: 50vw;
+  height: auto;
+  left: 50%;
+  top: 30%;
+  transform: translate(-50%);
+}
+
+#shoe-container,
+#color-container {
+  margin-bottom: 1rem;
+}
+
+g {
+  cursor: pointer;
+}
+
+#color-container rect {
+  cursor: pointer;
+}
+
+#save-shoe {
+  background: transparent;
+  width: 100%;
+  border: 2px solid #ffc18d;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 2rem;
+  color: #ffc18d;
+  letter-spacing: 0.5rem;
+  cursor: pointer;
+  padding: 1rem;
+}
+
+#save-shoe:hover {
+  background: #ffc18d;
+  color: #140234;
+  border-color: #140234;
+}
+
+.current-color {
+  stroke: white;
+  stroke-width: 1px;
+}
+
+#Shadow_Image {
+  pointer-events: none;
+}
